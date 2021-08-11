@@ -1,0 +1,16 @@
+3
+
+³†O_ˆ  ã               @   s*   d d„ Z dd„ Ze dƒZG dd„ dƒZdS )c             C   s   | j ddƒS )Nzutf-8Úignore)Údecode)Útext© r   úprivbin/configuration.pyÚ<lambda>   s    r   c             C   s   | j ddƒS )Nzutf-8r   )Úencode)r   r   r   r   r      s    zsettings.inic               @   s   e Zd Zdd„ Zdd„ ZdS )ÚSetsc             C   sê   d| _ d| _d| _d| _d| _d| _dg| _d| _d	| _d
+| _	d| _
+d| _d
+| _d| _
+d| _d| _d| _d| _zByttdƒjƒ jƒ }W n&   | jƒ  ttdƒjƒ jƒ }Y nX W d x0dd„ |D ƒD ]\}}t|jƒ ƒ| j|jƒ < qÂW X d S )Nz	us-west-1ZAKXXXXXXXXXXXXXXXXXXZ(xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxz	email.txtÚautoz'noreply-{randomnum_6}@dharmacowgirl.comzSESpy PJSenderz.https://www.example.com/{email_base64}/{email}zletter/default.htmlz.Send from SESpy by Pejoh.co. id #{randomnum_6}zUTF-8ZHtmlzfile/sample.pdfé   é    FTÚrbc             S   s,   g | ]$}d |kr|j dƒ r|jddƒ‘qS )ú=ú#z = é   )Ú
+startswithÚsplit)Ú.0Úliner   r   r   ú
+<listcomp>+   s    z!Sets.__init__.<locals>.<listcomp>)ÚregionÚaws_keyÚ
+aws_secretÚmailistÚfromtypeÚfrommailÚfromnameÚlinkÚletterÚsubjectÚcharsetÚ
+lettertypeÚ
+attachmentÚtreadÚsleepÚdebugÚ	duplicateÚexit_while_errorÚopenÚconfÚreadÚ
+splitlinesÚsaveÚevalÚstripÚ__dict__)ÚselfZcurdataÚnameÚvaluer   r   r   Ú__init__   s2    z
+Sets.__init__c             C   sT   d}x4| j jƒ D ]&}|d t| j | ƒ d }||7 }qW ttdƒjt|ƒƒ ~d S )NÚ z = z
+Úwb)r.   ÚkeysÚreprr'   r(   ÚwriteÚur)r/   Údatar0   r   r   r   r   r+   .   s    z	Sets.saveN)Ú__name__Ú
+__module__Ú__qualname__r2   r+   r   r   r   r   r      s   (r   N)Úrur8   r(   r   r   r   r   r   Ú<module>   s   
